@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest: #0b3d2e;
+  --emerald: #167c5a;
+  --light-green: #dff4e8;
+  --gold: #f4b942;
+  --off-white: #f8faf9;
+  --dark-text: #16221c;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 bg-offWhite font-body text-darkText antialiased;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald focus-visible:ring-offset-2;
+}
+
+::selection {
+  background: var(--light-green);
+  color: var(--forest);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+}

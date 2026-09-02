@@ -35,3 +35,12 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Node/Vite artifacts
+node_modules/
+dist/
+.vite/
+*.local
+
+# Local temp scaffold
+tmp/
